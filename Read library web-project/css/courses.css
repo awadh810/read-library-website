@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;  border: none;
+    text-decoration: none;
+    text-transform: capitalize;    
+    transition: .2s linear;
+}
+
+html
+{
+    font-size: 10px;    
+}
+
+html::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: black;
+}
+
+html::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: #fff;
+    border-radius: 16px;
+}
+
+body
+{
+    background: #010103;
+    color: white;
+}
+
+/* =====================================  end main style for the page ========================================= */
+
+.main-content  .sub-tilte h2 
+{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #d3ad7f;
+    padding: 20px;
+    background: #eee;
+}
+
+.main-content .box-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(260px , 1fr));
+    gap: 18px; 
+}
+
+.main-content .box-container .box
+{
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-content .box-container .box  video:hover    
+{
+    transform: scale(1.2);    
+    padding-bottom: 0;
+}
+
+.main-content .box-container .box h3
+{
+    color: #fff;     
+    font-size: 20px;
+    padding: 16px 0;      
+}
+
+.main-content .box-container .box  .lesson-Name
+{
+    color: #fff;     
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1px 0;     
+}
+
+
+.main-content .box-container .box:hover 
+{
+    background: #ccc;   /*#fff*/
+}
+
+
+.main-content .box-container .box:hover > * 
+{
+    color: #13131a;
+}
+ 

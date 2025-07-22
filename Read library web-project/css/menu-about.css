@@ -1,0 +1,305 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;  border: none;
+    text-decoration: none;
+    text-transform: capitalize;    
+    transition: .2s linear;
+}
+
+html
+{
+    font-size: 10px;  
+    scroll-behavior: smooth;   /* this attributes used here to give the scrollbar behavior as :  move to the destination  where you click on it from the navgation bar */ 
+}
+
+html::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: black;
+}
+
+html::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: #fff;
+    border-radius: 40px;
+}
+
+body
+{
+    background: #010103;
+    color: white;
+}
+
+/* =====================================  end main style for the pages ========================================= */
+
+/* =====================================  start header style for the page ========================================= */
+
+
+
+.headding
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 52px;
+    color: #fff;
+}
+
+.headding span
+{
+    color: red;
+}
+
+header nav 
+{
+    position: relative;
+    z-index: 1;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    background: rgb(0 , 100 , 0);
+    border-radius: 20px;
+    text-align: center;   
+}
+
+nav ul
+{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    display: inline-flex;
+    list-style: none;
+    color: white;       
+}
+
+nav ul li 
+{
+    font-size: 20px;
+    width: 120px;
+    margin: 15px;
+    padding: 15px;    
+    cursor: pointer; 
+}
+
+nav ul li  a
+{
+    text-decoration: none;
+    color: white;       
+}
+
+
+.active, nav ul li :hover
+{
+    background: #d3ad7f;   /*background:  #ff7200; */
+    border-radius: 15px;
+    letter-spacing: 3px;     
+}
+
+
+/* =====================================  end header style for the page ========================================= */
+
+.main-content  .sub-tilte h2 
+{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #d3ad7f;
+    padding: 30px;
+    background: #eee;
+}
+
+.main-content .box-container 
+{
+    display: grid;           /* set the display the content as columns and row */ 
+    grid-template-columns: repeat(auto-fit , minmax(290px , 1fr));    /* set how many columns will be in row */ 
+    gap: 18px;               /* set the space between the columns */ 
+}
+
+.main-content .box-container .box
+{
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.main-content .box-container .box img
+{
+    height: 240px;    /*15rem*/
+    width: 100%;     /*20rem*/
+    border-radius: 15px;
+}
+
+.main-content .box-container .box img:hover    
+{
+    transform: scale(1.2);    
+    padding-bottom: 20px;
+}
+
+.main-content .box-container .box h3
+{
+    color: #fff;     
+    font-size: 20px;
+    padding: 12px 0;      
+}
+
+.main-content .box-container .box  .auther
+{
+    color: #fff;     
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;   
+}
+
+
+.main-content .box-container .box:hover 
+{
+    background: #ccc;   /*#fff*/
+}
+
+.main-content .box-container .box:hover > * 
+{
+    color: #13131a;
+}
+ 
+.btn
+{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 9px 15px;
+    font-size: 20px;
+    color: #fff;
+    background: #d3ad7f;  /*background:  #ff7200; */
+    cursor: pointer;
+}
+.btn:hover
+{
+    letter-spacing: 2px;
+}
+
+
+/* ========================================= about style start here =====================================*/
+
+.headding-about
+{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 30px;    
+}
+
+.headding-about span
+{
+    color: #ff0000;
+    text-transform: uppercase;
+}
+
+.about .row
+{
+    display: flex;
+    align-items: center;
+    background: #13131a;
+}
+
+.about .row .image
+{
+    flex: 5 3 45px;
+}
+
+.about .row .image img
+{
+    width: 100%;
+}
+
+.about .row .content
+{
+    flex: 5 3 45px;
+    padding: 25px;
+}
+
+.about .row .content h3
+{
+    font-size: 30px;
+    color: #fff;
+}
+
+.about .row .content p
+{
+    font-size: 20px;
+    color: #ccc;
+    padding: 11px 0;
+    line-height: 19px;
+}
+
+footer 
+{
+    background: #13131a;
+    text-align: center;
+}
+
+footer .media
+{
+    padding: 14px 0;    
+}
+
+footer .media a
+{
+    padding: 5px;
+    border: 1px solid rgba(255 , 255 , 255 , 0.3);
+    margin: 2px;
+    border-radius: 50%;
+}
+
+footer .media a img
+{
+    border-radius: 50%;
+    width: 100px;
+}
+
+footer .media a:hover
+{
+    background: #d3ad7f;
+}
+
+footer .links-website
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px ; 
+    /* gap: 14px;  this proprety used set space between the columns  it comment it ,,   I used margin below */
+}
+
+footer .links-website a
+{   margin: 0 5px;
+    padding: 3px 18px;
+    color: #fff;
+    border: 1px solid rgba(255 , 255 , 255 , 0.3);
+    font-size: 20px;
+}
+
+footer .links-website a:hover
+{
+    background: #d3ad7f;
+}
+
+footer .programmer
+{
+    font-size: 22px;
+    font-weight: lighter;
+    color: #fff;
+    padding: 20px;
+}
+
+footer .programmer span
+{
+    color: #d3ad7f;
+}
+/* ========================================= about style end here =====================================*/
